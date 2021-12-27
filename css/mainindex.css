@@ -1,40 +1,31 @@
-body{
-	background-color: #56544d;
-	font-family: verdana;
-	color:white;
-}
-
-h1{
-	color: orange;
-	text-align: center;
-}
-
-hr{
-	color:white;
-	background-color:white;
-	height:10px;
-}
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
+:root{--base03:#002b36;
+--base02:#073642;
+--base01:#586e75;
+--txt:#657b83;
+--base0:#839496;
+--base1:#93a1a1;
+--base2:#eee8d5;
+--bg:#fdf6e3;
+--yellow:#b58900;
+--thm:#cb4b16;
+--red:#dc322f;
+--magenta:#d33682;
+--violet:#6c71c4;
+--blue:#268bd2;
+--cyan:#2aa198;
+--green:#859900;}
+@media (prefers-color-scheme: dark){:root{--bg:#002b36;--txt:#839496;--thm:#d33682}} /*85CB33 for Yellow-Green */
+body{background:var(--bg);color:var(--txt);font:1.2em/1.6em verdana,sans-serif;max-width:660px;margin:7% auto auto;padding:0 5%;}
+h1,h2,h3{font-size:1em}
+a{color:var(--thm);text-decoration:none}
+a:hover{color:var(--thm);background-color:var(--bg);padding-top:3px}
+header h1{color:var(--thm);font-size:1.2em;display:inline}
+nav{font-weight:bold;display:inline}
+ul{list-style-type:'-- ';line-height:1.4}
+li{margin-bottom:5px}
+pre{border:1px solid var(--txt);padding:1em;overflow-x:auto}
+code{background:var(--thm)}
+pre code{background:none}
+footer{margin-bottom:15px}
+@media(max-width:480px){body{font:1em/1.4em sans-serif}}
 
